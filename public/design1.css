@@ -1,7 +1,10 @@
+/* Some code borrowed from Joshua Kaufman (http://unraveled.com/publications/css_tabs/)
+
+CSS Tabs is licensed under Creative Commons Attribution 3.0 - http://creativecommons.org/licenses/by/3.0/ */
 
 body {
-font: 100% verdana, arial, sans-serif;
-background-color: #fff;
+font-family: 'Trebuchet MS', Helvetica, sans-serif;
+background-color: #263549;
 margin: 50px;
 }
 
@@ -9,9 +12,10 @@ margin: 50px;
 
 ul#tabnav { /* general settings */
 text-align: left; /* set to left, right or center */
-margin: 1em 0 1em 0; /* set margins as desired */
-font: bold 11px verdana, arial, sans-serif; /* set font as desired */
-border-bottom: 1px solid #6c6; /* set border COLOR as desired */
+margin: 1em 0 -1px 0; /* set margins as desired */
+font: normal 1.1em Century Gothic, sans-serif; /* set font as desired */
+
+/*border-bottom: 1px solid #6c6; /* set border COLOR as desired */
 list-style-type: none;
 padding: 3px 10px 3px 10px; /* THIRD number must change with respect to padding-top (X) below */
 }
@@ -20,29 +24,67 @@ ul#tabnav li { /* do not change */
 display: inline;
 }
 
-body#tab1 li.tab1, body#tab2 li.tab2, body#tab3 li.tab3, body#tab4 li.tab4 { /* settings for selected tab */
-border-bottom: 1px solid #fff; /* set border color to page background color */
-background-color: #fff; /* set background color to match above border color */
+body#tab1 li.tab1, body#tab2 li.tab2, body#tab3 li.tab3 { /* settings for selected tab */
+border-bottom: 1px solid #eee; /* set border color to page background color */
+background-color: #eee; /* set background color to match above border color */
 }
 
-body#tab1 li.tab1 a, body#tab2 li.tab2 a, body#tab3 li.tab3 a, body#tab4 li.tab4 a { /* settings for selected tab link */
-background-color: #fff; /* set selected tab background color as desired */
-color: #000; /* set selected tab link color as desired */
+body#tab1 li.tab1 a, body#tab2 li.tab2 a, body#tab3 li.tab3 a { /* settings for selected tab link */
+background-color: #eee; /* set selected tab background color as desired */
+color: #333; /* set selected tab link color as desired */
 position: relative;
 top: 1px;
 padding-top: 4px; /* must change with respect to padding (X) above and below */
 }
 
+table
+{
+border-collapse:collapse;
+}
+table,th, td
+{
+border: 2px solid #fff;
+}
+td{
+    padding:0.5em;
+}
+
+td.highlight{
+    background:#621910;
+    color:#fff;
+}
+
 ul#tabnav li a { /* settings for all tab links */
-padding: 3px 4px; /* set padding (tab size) as desired; FIRST number must change with respect to padding-top (X) above */
-border: 1px solid #6c6; /* set border COLOR as desired; usually matches border color specified in #tabnav */
-background-color: #cfc; /* set unselected tab background color as desired */
-color: #666; /* set unselected tab link color as desired */
+letter-spacing:0.2em;
+border-radius:3px;
+padding: 3px 1em; /* set padding (tab size) as desired; FIRST number must change with respect to padding-top (X) above */
+border: 1px solid #aaa; /* set border COLOR as desired; usually matches border color specified in #tabnav */
+background-color: #ccc; /* set unselected tab background color as desired */
+color: #555; /* set unselected tab link color as desired */
 margin-right: 0px; /* set additional spacing between tabs as desired */
 text-decoration: none;
 border-bottom: none;
 }
 
 ul#tabnav a:hover { /* settings for hover effect */
-background: #fff; /* set desired hover color */
+background: #f0f0f0; /* set desired hover color */
+}
+
+div#pane {
+    background: #eee;
+    border: 1px #aaaaaa solid;
+    border-radius:10px;
+}
+div#content {
+    background:#fff;
+    border-radius:5px;
+    margin:1em;
+    padding:2em 3em 2em 3em;
+}
+
+h1{
+    font: bold 3em Century Gothic, sans-serif; /* set font as desired */
+    letter-spacing:-0.1em;
+    color:#444;
+    border-bottom:2px #92382C solid;
 }
