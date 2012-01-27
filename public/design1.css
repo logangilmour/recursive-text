@@ -8,6 +8,17 @@ background-color: #263549;
 margin: 50px;
 }
 
+h1{
+    font: bold 3em Century Gothic, sans-serif; /* set font as desired */
+    letter-spacing:-0.1em;
+    color:#444;
+    border-bottom:2px #92382C solid;
+}
+
+h2{
+    font-size: 1.2em;
+    font-weight:bold;
+}
 /* begin css tabs */
 
 ul#tabnav { /* general settings */
@@ -35,6 +46,10 @@ color: #333; /* set selected tab link color as desired */
 position: relative;
 top: 1px;
 padding-top: 4px; /* must change with respect to padding (X) above and below */
+}
+
+p{
+    margin-bottom:2em;
 }
 
 table
@@ -81,10 +96,9 @@ div#content {
     margin:1em;
     padding:2em 3em 2em 3em;
 }
-
-h1{
-    font: bold 3em Century Gothic, sans-serif; /* set font as desired */
-    letter-spacing:-0.1em;
-    color:#444;
-    border-bottom:2px #92382C solid;
+ul.feature-list{
+    color:#621910;
+}
+span.wrapper{
+    color:#333;
 }
