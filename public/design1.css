@@ -3,16 +3,16 @@
 CSS Tabs is licensed under Creative Commons Attribution 3.0 - http://creativecommons.org/licenses/by/3.0/ */
 
 body {
-font-family:georgia,garamond,serif;
-background-color: #7D674E;
+font-family: 'Trebuchet MS', Helvetica, sans-serif;
+background-color: #263549;
 margin: 50px;
 }
 
 h1{
-    font: bold 3em inherit; /* set font as desired */
+    font: bold 3em Century Gothic, sans-serif; /* set font as desired */
     letter-spacing:-0.1em;
     color:#444;
-    border-bottom:2px #92622C solid;
+    border-bottom:2px #92382C solid;
 }
 
 h2{
@@ -24,7 +24,7 @@ h2{
 ul#tabnav { /* general settings */
 text-align: left; /* set to left, right or center */
 margin: 1em 0 -1px 0; /* set margins as desired */
-font: normal 1.1em inherit; /* set font as desired */
+font: normal 1.1em Century Gothic, sans-serif; /* set font as desired */
 
 /*border-bottom: 1px solid #6c6; /* set border COLOR as desired */
 list-style-type: none;
@@ -36,13 +36,13 @@ display: inline;
 }
 
 body#tab1 li.tab1, body#tab2 li.tab2, body#tab3 li.tab3 { /* settings for selected tab */
-border-bottom: 1px solid #5B8528; /* set border color to page background color */
-background-color: #5B8528; /* set background color to match above border color */
+border-bottom: 1px solid #eee; /* set border color to page background color */
+background-color: #eee; /* set background color to match above border color */
 }
 
 body#tab1 li.tab1 a, body#tab2 li.tab2 a, body#tab3 li.tab3 a { /* settings for selected tab link */
-background-color: #5B8528; /* set selected tab background color as desired */
-color: #fff; /* set selected tab link color as desired */
+background-color: #eee; /* set selected tab background color as desired */
+color: #333; /* set selected tab link color as desired */
 position: relative;
 top: 1px;
 padding-top: 4px; /* must change with respect to padding (X) above and below */
@@ -58,43 +58,46 @@ border-collapse:collapse;
 }
 table,th, td
 {
-    border:none;
-border-bottom: 1px solid #92622C;
+border: 2px solid #fff;
 }
 td{
     padding:0.5em;
 }
 
 td.highlight{
-    font-weight:bold;
+    background:#621910;
+    color:#fff;
 }
 
 ul#tabnav li a { /* settings for all tab links */
 letter-spacing:0.2em;
+border-radius:3px;
 padding: 3px 1em; /* set padding (tab size) as desired; FIRST number must change with respect to padding-top (X) above */
-border: 1px solid #8AB752; /* set border COLOR as desired; usually matches border color specified in #tabnav */
-background-color: #4D652F; /* set unselected tab background color as desired */
-color: #ddd; /* set unselected tab link color as desired */
+border: 1px solid #aaa; /* set border COLOR as desired; usually matches border color specified in #tabnav */
+background-color: #ccc; /* set unselected tab background color as desired */
+color: #555; /* set unselected tab link color as desired */
 margin-right: 0px; /* set additional spacing between tabs as desired */
 text-decoration: none;
 border-bottom: none;
 }
 
 ul#tabnav a:hover { /* settings for hover effect */
-background: #5B8528; /* set desired hover color */
+background: #f0f0f0; /* set desired hover color */
 }
 
 div#pane {
-    background: #5B8528;
-    border: 1px #8AB752 solid;
+    background: #eee;
+    border: 1px #aaaaaa solid;
+    border-radius:10px;
 }
 div#content {
     background:#fff;
+    border-radius:5px;
     margin:1em;
     padding:2em 3em 2em 3em;
 }
 ul.feature-list{
-    color:#92622C;
+    color:#621910;
 }
 span.wrapper{
     color:#333;
