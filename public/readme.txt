@@ -1,0 +1,3 @@
+I used these tabs http://unraveled.com/publications/assets/css_tabs/ as a template for CSS tabs based on links contained in an unordered list, as I prefer to only use tables for tabular data, and an unordered list provides a nice container to put data that will be styled with CSS in. The code I started from is supposed to have been tested in multiple versions of the major browsers, so it was a good starting point (It's licenced under Creative Commons Attribution licence).
+
+I used the new border-radius property (-moz-border-radius in Firefox) in one of the designs, but ensured that it would gracefully degrade in the case that it was used in a browser that does not support that property.
